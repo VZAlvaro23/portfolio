@@ -1,0 +1,21 @@
+h1 {
+    font-weight: 500;
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: $p-font;
+    font-size: 1em;
+}

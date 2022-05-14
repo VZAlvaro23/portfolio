@@ -1,0 +1,36 @@
+.about {
+  position: relative;
+  background: $bg1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transform-origin: top;
+  transform: rotate3d(0, 0, 0, 0deg);
+  min-height: 100vh;
+  transition: all 1.5s;
+  h2 {
+    text-transform: uppercase;
+  }
+  &__content {
+    width: 80%;
+    p {
+      margin-top: 1em;
+    }
+  }
+}
+
+.perspective {
+    perspective: 800px;
+}
+
+.footer {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  img {
+    padding: 1em;
+    width: 100%;
+    height: 100%;
+  }
+}

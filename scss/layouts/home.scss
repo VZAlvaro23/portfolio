@@ -1,0 +1,30 @@
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: $bg1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    a {
+        text-transform: uppercase;
+    }
+    ul {
+        margin: 1em;
+        display: flex;
+        li {
+            margin: 0 1em;
+        }
+    }
+    .logo {
+        margin: 1em;
+    }
+}

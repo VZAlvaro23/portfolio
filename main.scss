@@ -1,0 +1,12 @@
+// Abstracts
+@import "scss/abstracts/variables";
+
+// Base
+@import "scss/base/reset", "scss/base/fonts", "scss/base/base",
+  "scss/base/typography";
+
+// Layouts
+@import "scss/layouts/home", 
+"scss/layouts/projects", 
+"scss/layouts/about",
+"scss/layouts/splash";

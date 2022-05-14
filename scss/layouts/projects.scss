@@ -1,0 +1,37 @@
+.projects {
+  
+  perspective: 800px;
+
+  &__article {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 30% 30%;
+    padding: 3em 0;
+    transform-origin: top;
+    transform: rotate3d(0, 0, 0, 0deg);
+    ul {
+      display: flex;
+
+    }
+    p {
+      margin: 1em 0 2em 0;
+    }
+
+  }
+}
+
+.article__img {
+  margin-right: 2em;
+}
+
+.article__content {
+  margin-left: 2em;
+}
+
+.color1 {
+  background: $bg2;
+}
+
+.color2 {
+  background: $bg1;
+}
