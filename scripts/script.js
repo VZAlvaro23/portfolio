@@ -36,7 +36,7 @@ var anim = {
         id: "about",
         trigger: ".about",
         toggleActions: "play pause resume pause",
-        start: "top 20%",
+        start: "top center",
         // end: 'center center',
         // markers: 'true',
         // scrub: 0.25,
@@ -55,6 +55,9 @@ var anim = {
 window.addEventListener("load", function () {
   anim.init();
 });
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
 
 function scrollBody() {
   body.style.overflowY = "visible";

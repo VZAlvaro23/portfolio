@@ -34,8 +34,10 @@
 }
 
 @media screen and (max-width: 750px) {
-  .projects__article {
+  .projects {
+    &__article {
     grid-template-columns: 80%;
+    }
   }
   .article__img {
     margin-right: 0;
