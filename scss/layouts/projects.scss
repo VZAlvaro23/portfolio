@@ -1,5 +1,4 @@
 .projects {
-  
   perspective: 800px;
 
   &__article {
@@ -11,12 +10,10 @@
     transform: rotate3d(0, 0, 0, 0deg);
     ul {
       display: flex;
-
     }
     p {
       margin: 1em 0 2em 0;
     }
-
   }
 }
 
@@ -34,4 +31,17 @@
 
 .color2 {
   background: $bg1;
+}
+
+@media screen and (max-width: 750px) {
+  .projects__article {
+    grid-template-columns: 80%;
+  }
+  .article__img {
+    margin-right: 0;
+  }
+
+  .article__content {
+    margin: 2em 0 0 0;
+  }
 }
