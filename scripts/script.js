@@ -2,6 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 var artEls;
 var body = document.getElementsByTagName("body")[0];
+var html = document.getElementsByTagName("html")[0];
 
 var anim = {
   init: function () {
@@ -20,7 +21,7 @@ var anim = {
         // start: "top 50%",
         end: "bottom 80%",
         // end: "bottom 50%",
-        onLeave: self => self.kill(false, true),
+        onLeave: (self) => self.kill(false, true),
         scrub: 0.25,
       },
     });
@@ -35,9 +36,9 @@ var anim = {
       scrollTrigger: {
         id: "about",
         trigger: ".about",
-        toggleActions: "play pause resume pause",
+        // toggleActions: "play none none none",
         start: "top center",
-        // end: 'center center',
+        end: 'center center',
         // markers: 'true',
         // scrub: 0.25,
         // pin: true
@@ -54,13 +55,14 @@ var anim = {
 
 window.addEventListener("load", function () {
   anim.init();
-});
-window.onbeforeunload = function () {
   window.scrollTo(0, 0);
-};
+});
+
+
 
 function scrollBody() {
   body.style.overflowY = "visible";
+  // html.style.scrollBehavior = "smooth";
 }
 
 function open() {
@@ -77,6 +79,13 @@ function open() {
   setTimeout(scrollBody, 6000);
 }
 
-const btn = document.getElementById('btn');
+const btn = document.getElementById("btn");
 
-btn.addEventListener('click', open);
+btn.addEventListener("click", open);
+
+const nav = document.getElementById('nav');
+const navBtn = document.getElementById('mobile-nav-toggle');
+
+navBtn.addEventListener("click", () => {
+  nav.classList.toggle("visible");
+});

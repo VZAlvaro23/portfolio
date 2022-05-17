@@ -1,30 +1,70 @@
 .home {
-    width: 100%;
-    min-height: 100vh;
-    background: $bg1;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: $bg1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1em;
+}
+
+.visible {
+  display: flex;
 }
 
 nav {
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  justify-content: end;
+  a {
+    text-transform: uppercase;
+  }
+  .mobile-nav-toggle {  
+      display: none;
+  }
+  ul {
+    margin: 1em;
     display: flex;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    justify-content: space-between;
-    a {
-        text-transform: uppercase;
+    li {
+      margin: 0 1em;
     }
+  }
+}
+
+@media screen and (max-width: 475px) {
+  nav {
+      display: none;
+    justify-content: center;
+    text-align: center;
     ul {
-        margin: 1em;
-        display: flex;
-        li {
-            margin: 0 1em;
-        }
+      flex-direction: column;
+          li {
+      margin: 1em;
     }
-    .logo {
-        margin: 1em;
     }
+
+  }
+  .mobile-nav-toggle {
+      cursor: pointer;
+      position: absolute;
+      background-image: url("assets/nav.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-color: unset;
+      top: 1rem;
+      width: 3em;
+      aspect-ratio: 1;
+      z-index: 9999;
+      right: 1rem;
+  }
 }
