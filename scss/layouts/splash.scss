@@ -3,17 +3,14 @@
   width: 100%;
   height: 100vh;
   background: #1d1e22;
-  // background-image: url("assets/background.png");
-  // background-repeat: no-repeat;
-  // background-size: cover;
   display: flex;
   justify-content: end;
   align-items: center;
   z-index: 100;
   transition: all 3s;
-  transform: rotate3d(0, 0, 0, 0deg);
   transform-origin: left;
 }
+
 .clickme {
   position: absolute;
   top: -40px;
@@ -21,6 +18,7 @@
   z-index: 10;
   animation: bigger 1.5s alternate infinite ease-in;
 }
+
 .btn-wrapper {
   position: relative;
 }
@@ -38,13 +36,8 @@
   border: 1px solid black;
   border-radius: 75px 0 0 75px;
   background: #1d1e22;
-
-  // background-image: url("assets/background.png");
-  // background-repeat: no-repeat;
-  // background-size: 1000px 1000px;
-  transform-origin: right center;
+  transform-origin: right;
   filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.68));
-
   svg {
     padding: 1em;
   }
@@ -62,7 +55,8 @@
 
 .splash-image {
   position: absolute;
-  width: 500px;
+  // width: 500px;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -73,5 +67,12 @@
 @keyframes bigger {
   100% {
     transform: scale(1.2);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .splash-image {
+    width: 50%;
+    top: 50px;
   }
 }

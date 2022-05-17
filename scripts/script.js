@@ -2,7 +2,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 var artEls;
 var body = document.getElementsByTagName("body")[0];
-var html = document.getElementsByTagName("html")[0];
 
 var anim = {
   init: function () {
@@ -10,8 +9,9 @@ var anim = {
     anim.animate();
   },
   initEls: function () {
-    artEls = document.querySelectorAll(".projects__article");
+    artEls = document.querySelectorAll(".fold");
   },
+  
   animate: function () {
     let tl = gsap.timeline({
       scrollTrigger: {
@@ -21,7 +21,7 @@ var anim = {
         // start: "top 50%",
         end: "bottom 80%",
         // end: "bottom 50%",
-        onLeave: (self) => self.kill(false, true),
+        // onLeave: (self) => self.kill(false, true),
         scrub: 0.25,
       },
     });
@@ -32,24 +32,24 @@ var anim = {
       opacity: 0,
       stagger: 0.5,
     });
-    let t2 = gsap.timeline({
-      scrollTrigger: {
-        id: "about",
-        trigger: ".about",
-        // toggleActions: "play none none none",
-        start: "top center",
-        end: 'center center',
-        // markers: 'true',
-        // scrub: 0.25,
-        // pin: true
-      },
-    });
-    t2.from(".about", {
-      rotationX: -90,
-      // rotationY:0,
-      opacity: 0,
-      stagger: 0.5,
-    });
+    // let t2 = gsap.timeline({
+    //   scrollTrigger: {
+    //     id: "about",
+    //     trigger: ".about",
+    //     // toggleActions: "play none none none",
+    //     start: "top center",
+    //     end: 'center center',
+    //     // markers: 'true',
+    //     scrub: 0.25,
+    //     // pin: true
+    //   },
+    // });
+    // t2.from(".about", {
+    //   rotationX: -90,
+    //   // rotationY:0,
+    //   opacity: 0,
+    //   stagger: 0.5,
+    // });
   },
 };
 
