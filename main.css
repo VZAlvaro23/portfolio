@@ -284,6 +284,10 @@ nav ul li {
   height: 100%;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .splash {
   position: absolute;
   width: 100%;
