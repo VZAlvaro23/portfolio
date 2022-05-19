@@ -80,6 +80,7 @@ p {
 
 .home-content {
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,8 +95,8 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.home-content img {
-  height: 60%;
+.home-content .home-tag {
+  width: 80%;
 }
 
 .logo {
