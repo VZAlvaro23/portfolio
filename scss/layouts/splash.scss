@@ -56,7 +56,7 @@
 .splash-image {
   position: absolute;
   // width: 500px;
-  width: auto;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -72,7 +72,7 @@
 
 @media screen and (max-width: 720px) {
   .splash-image {
-    width: 50%;
+    width: 80%;
     top: 50px;
   }
 }
