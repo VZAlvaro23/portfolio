@@ -56,12 +56,36 @@
 .splash-image {
   position: absolute;
   // width: 500px;
-  width: 50%;
+  width: 20%;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
   text-align: center;
+}
+
+.book-corner-top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.book-corner-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotate(90deg);
+}
+.book-corner-bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: rotate(-90deg);
+}
+.book-corner-bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
 }
 
 @keyframes bigger {
@@ -72,7 +96,7 @@
 
 @media screen and (max-width: 720px) {
   .splash-image {
-    width: 80%;
+    width: 30%;
     top: 50px;
   }
 }

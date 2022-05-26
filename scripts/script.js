@@ -55,10 +55,8 @@ var anim = {
 
 window.addEventListener("load", function () {
   anim.init();
-  window.scrollTo(0, 0);
+  window.scroll(0, 0);
 });
-
-
 
 function scrollBody() {
   body.style.overflowY = "visible";

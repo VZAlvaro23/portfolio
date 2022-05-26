@@ -1,5 +1,12 @@
 .projects {
   perspective: 800px;
+  
+  .projects__title {
+    background-color: $bg1;
+    text-transform: uppercase;
+    padding: 1em;
+    text-align:center;
+  }
 
   &__article {
     display: grid;
