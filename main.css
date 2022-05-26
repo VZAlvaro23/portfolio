@@ -111,6 +111,7 @@ p {
   top: 0;
   left: 0;
   margin: 1em;
+  z-index: 10;
 }
 
 .visible {
@@ -120,6 +121,7 @@ p {
 }
 
 nav {
+  background-color: #FFFFF4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
