@@ -97,9 +97,12 @@ p {
 }
 .home-content .home-tag {
   height: 60%;
+  opacity: 0;
   max-width: none;
   -o-object-fit: contain;
      object-fit: contain;
+  -webkit-transition: opacity 3s;
+  transition: opacity 3s;
 }
 .home-content .home-title {
   margin: 2em;

@@ -18,8 +18,10 @@
   .home-tag {
     height: 60%;
     // width: 80%;
+    opacity: 0;
     max-width: none;
     object-fit: contain;
+    transition: opacity 3s;
   }
 
   .home-title {
