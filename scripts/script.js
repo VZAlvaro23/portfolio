@@ -73,11 +73,11 @@ function open() {
     rotationY: -90,
     delay: 3,
   });
-      TweenMax.to(".home-tag", 2, {
-        opacity: 1,
-        duration: 3,
-        delay: 6,
-      });
+      // TweenMax.to(".home-tag", 2, {
+      //   opacity: 1,
+      //   // duration: 3,
+      //   delay: 6,
+      // });
 
   setTimeout(scrollBody, 6000);
 }
