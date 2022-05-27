@@ -8,10 +8,10 @@
   align-items: center;
   .drop1 {
     position: absolute;
-    top: -5px;
-    z-index: 10;
+    top: -137px;
+    z-index: 30;
     left: -45px;
-    animation: drop1 15s 8s;
+    animation: drop1 10s 8s forwards;
   }
 }
 .home-content {
@@ -26,7 +26,7 @@
     height: 60%;
     // width: 80%;
     // opacity: 0;
-    z-index: 30;
+
     max-width: none;
     object-fit: contain;
     // transition: opacity 1s;
@@ -43,7 +43,7 @@
   top: 0;
   left: 0;
   margin: 1em 3em;
-  z-index: 10;
+  z-index: 30;
 }
 
 .visible {
@@ -107,8 +107,7 @@ nav {
 }
 
 @keyframes drop1 {
-  0% {
-    transform: translateY(-137px);
+  100% {
+    transform: translateY(132px);
   }
-
 }
