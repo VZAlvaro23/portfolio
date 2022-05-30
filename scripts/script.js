@@ -81,10 +81,34 @@ function open() {
 
   setTimeout(scrollBody, 6000);
 }
+  const drop1 = document.getElementById('drop1');
+  const drop2 = document.getElementById('drop2');
+  const drop3 = document.getElementById('drop3');
+  const drop4 = document.getElementById('drop4');
+  const drop5 = document.getElementById('drop5');
+  const drop6 = document.getElementById('drop6');
+  const drop7 = document.getElementById('drop7');
+  const drop8 = document.getElementById('drop8');
+  const drop9 = document.getElementById('drop9');
+
+function addAnimations() {
+  drop1.classList.add('animationdrop0');
+  drop2.classList.add('animationdrop1');
+  drop4.classList.add('animationdrop1');
+  drop7.classList.add('animationdrop1');
+  drop3.classList.add('animationdrop2');
+  drop8.classList.add('animationdrop2');
+  drop5.classList.add('animationdrop3');
+  drop9.classList.add('animationdrop4');
+  drop6.classList.add('animationdrop5');
+}
 
 const btn = document.getElementById("btn");
 
-btn.addEventListener("click", open);
+btn.addEventListener("click", () => {
+  open();
+  addAnimations();
+});
 
 const nav = document.getElementById('nav');
 const navBtn = document.getElementById('mobile-nav-toggle');
