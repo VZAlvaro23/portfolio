@@ -85,8 +85,8 @@ p {
 }
 
 .animationdrop0 {
-  -webkit-animation: drop1 10s 7s ease-out forwards;
-          animation: drop1 10s 7s ease-out forwards;
+  -webkit-animation: drop1 10s 6s ease-out forwards;
+          animation: drop1 10s 6s ease-out forwards;
 }
 
 #drop2, #drop4, #drop7 {
@@ -95,8 +95,8 @@ p {
 }
 
 .animationdrop1 {
-  -webkit-animation: drop2 8s 7s ease-out forwards;
-          animation: drop2 8s 7s ease-out forwards;
+  -webkit-animation: drop2 8s 6s ease-out forwards;
+          animation: drop2 8s 6s ease-out forwards;
 }
 
 #drop3, #drop8 {
@@ -105,8 +105,8 @@ p {
 }
 
 .animationdrop2 {
-  -webkit-animation: drop3 9s 7s ease-out forwards;
-          animation: drop3 9s 7s ease-out forwards;
+  -webkit-animation: drop3 9s 6s ease-out forwards;
+          animation: drop3 9s 6s ease-out forwards;
 }
 
 #drop5 {
@@ -115,8 +115,8 @@ p {
 }
 
 .animationdrop3 {
-  -webkit-animation: drop5 10s 7s ease-out forwards;
-          animation: drop5 10s 7s ease-out forwards;
+  -webkit-animation: drop5 10s 6s ease-out forwards;
+          animation: drop5 10s 6s ease-out forwards;
 }
 
 #drop9 {
@@ -125,8 +125,8 @@ p {
 }
 
 .animationdrop4 {
-  -webkit-animation: drop9 11s 7s ease-out forwards;
-          animation: drop9 11s 7s ease-out forwards;
+  -webkit-animation: drop9 11s 6s ease-out forwards;
+          animation: drop9 11s 6s ease-out forwards;
 }
 
 #drop6 {
@@ -135,8 +135,8 @@ p {
 }
 
 .animationdrop5 {
-  -webkit-animation: drop6 12s 7s ease-out forwards;
-          animation: drop6 12s 7s ease-out forwards;
+  -webkit-animation: drop6 12s 6s ease-out forwards;
+          animation: drop6 12s 6s ease-out forwards;
 }
 
 @-webkit-keyframes drop2 {
